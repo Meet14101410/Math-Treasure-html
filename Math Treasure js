@@ -1,0 +1,10 @@
+function check(){
+  let answer = document.getElementById("answer").value;
+  let result = document.getElementById("result");
+
+  if(answer == 13){
+    result.innerHTML = "🎉 Treasure Found!";
+  } else {
+    result.innerHTML = "❌ Wrong answer, try again!";
+  }
+}
