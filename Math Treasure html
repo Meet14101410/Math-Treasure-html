@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Math Treasure</title>
+</head>
+<body style="text-align:center; font-family:Arial;">
+
+<h1>🏴‍☠️ Math Treasure</h1>
+<p>Solve the math to find the treasure!</p>
+
+<p>What is 8 + 5 ?</p>
+
+<input type="number" id="answer" placeholder="Your answer">
+<button onclick="check()">Find Treasure</button>
+
+<p id="result"></p>
+
+<script>
+function check(){
+let ans = document.getElementById("answer").value;
+
+if(ans == 13){
+document.getElementById("result").innerHTML = "🎉 You found the treasure!";
+}
+else{
+document.getElementById("result").innerHTML = "❌ Try again!";
+}
+}
+</script>
+
+</body>
+</html>
